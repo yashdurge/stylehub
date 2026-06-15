@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - StyleHub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+nav{
+    background:#111;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('./pexels-rachel-claire-5864245.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+}
+
+.container{
+    background:white;
+    margin:40px;
+    padding:50px 30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    background:#fafafa;
+    padding:25px;
+    width:300px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#ff9800;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.feature{
+    background:#fff8ef;
+    padding:20px;
+    border-left:5px solid #ff9800;
+    border-radius:8px;
+}
+
+.image-gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.image-gallery img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.image-gallery img:hover{
+    transform:scale(1.03);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .container{
+        margin:20px;
+    }
+
+    .image-gallery{
+        grid-template-columns:1fr;
+    }
+
+    .image-gallery img{
+        height:300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>StyleHub</h2>
+
+    <div>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>About StyleHub</h1>
+    <p>
+        Bringing modern fashion, comfort, and confidence together for every
+        lifestyle.
+    </p>
+</section>
+
+<div class="container">
+    <h2 class="section-title">Who We Are</h2>
+
+    <p class="about-text">
+        StyleHub is a modern clothing brand dedicated to delivering trendy,
+        comfortable, and affordable fashion. Our collections are designed for
+        people who want to express their personality through style while
+        enjoying premium quality fabrics and contemporary designs.
+        We believe fashion should be accessible to everyone and inspire
+        confidence in everyday life.
+    </p>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Our Mission & Vision</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Our Mission</h3>
+            <p>
+                To provide stylish, high-quality clothing that combines comfort,
+                affordability, and modern trends.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Vision</h3>
+            <p>
+                To become a trusted fashion destination that empowers people to
+                look and feel their best every day.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Our Values</h3>
+            <p>
+                Quality, customer satisfaction, innovation, and sustainable
+                fashion practices guide everything we do.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Why Choose StyleHub?</h2>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Premium Quality</h3>
+            <p>Carefully selected fabrics for maximum comfort.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Affordable Fashion</h3>
+            <p>Stylish clothing at prices everyone can enjoy.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Latest Trends</h3>
+            <p>Fresh collections inspired by modern fashion.</p>
+        </div>
+
+        <div class="feature">
+            <h3>Customer First</h3>
+            <p>Dedicated support and a seamless shopping experience.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Our Store Gallery</h2>
+
+    <div class="image-gallery">
+        <img src="./pexels-rachel-claire-5864245.jpg" alt="Shop Image">
+        <img src="./pexels-rachel-claire-5531541.jpg" alt="Shop Image">
+    </div>
+</div>
+
+<footer>
+    <p>© 2025 StyleHub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

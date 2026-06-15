@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium T-Shirts</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f5f7fa,#e4e8f0);
+    min-height:100vh;
+}
+
+/* Navbar */
+nav{
+    background:#111;
+    padding:18px 30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff4d4d;
+}
+
+/* Heading */
+h1{
+    text-align:center;
+    margin:35px 0;
+    font-size:42px;
+    color:#222;
+}
+
+/* Grid - 4 Cards Per Row */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:20px 50px 60px;
+}
+
+/* Card */
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:12px 0 6px;
+    font-size:20px;
+    color:#222;
+}
+
+.price{
+    color:#ff4d4d;
+    font-weight:bold;
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.btn{
+    margin-bottom:18px;
+    padding:10px 20px;
+    border:none;
+    background:#111;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff4d4d;
+}
+
+/* Tablet */
+@media(max-width:992px){
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:600px){
+    .grid{
+        grid-template-columns:1fr;
+        padding:20px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">⬅ Back to Home</a>
+</nav>
+
+<h1>🔥 Premium T-Shirts Collection</h1>
+
+<div class="grid">
+
+    <!-- Row 1 -->
+    <div class="card">
+        <img src="./black.png" alt="Black Classic Tee">
+        <h3>Black Classic Tee</h3>
+        <p class="price">₹499</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./white.png" alt="White Minimal Tee">
+        <h3>White Minimal Tee</h3>
+        <p class="price">₹599</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./medallion.png" alt="Graphic Street Tee">
+        <h3>Graphic Street Tee</h3>
+        <p class="price">₹699</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./Red Urban Tee.png" alt="Red Urban Tee">
+        <h3>Red Urban Tee</h3>
+        <p class="price">₹549</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card">
+        <img src="./Blue Casual Tee.png" alt="Blue Casual Tee">
+        <h3>Blue Casual Tee</h3>
+        <p class="price">₹649</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./Green Nature Tee.png" alt="Green Nature Tee">
+        <h3>Green Nature Tee</h3>
+        <p class="price">₹599</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./Yellow Summer Tee.png" alt="Yellow Summer Tee">
+        <h3>Yellow Summer Tee</h3>
+        <p class="price">₹529</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+    <div class="card">
+        <img src="./Oversized Streetwear Tee.png" alt="Oversized Streetwear Tee">
+        <h3>Oversized Streetwear Tee</h3>
+        <p class="price">₹799</p>
+        <button class="btn">Buy Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
